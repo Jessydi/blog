@@ -5,7 +5,7 @@
     :height="height"
     :class="className"
     viewBox="0 0 448 512"
-    :aria-labelledby="iconName" 
+    :aria-labelledby="iconName"
     role="presentation"
     @click="$emit('click')"
   >
@@ -34,6 +34,5 @@ export default {
 svg {
   display: inline-block;
   vertical-align: baseline;
-  margin-bottom: -2px;
 }
 </style>

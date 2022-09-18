@@ -10,18 +10,24 @@
       >
       </BlogPost>
     </section>
-    <section>
-      
-    </section>
+    <BlogCardSection
+      title="View More Recent Blogs"
+      :sample-blog-cards="sampleBlogCards"
+    />
+    <RegisterSection />
   </div>
 </template>
 
 <script>
 import BlogPost from "../components/BlogPost.vue";
+import BlogCardSection from "../components/BlogCardSection.vue";
+import RegisterSection from "../components/RegisterSection.vue";
 export default {
   name: "HomeComponent",
   components: {
     BlogPost,
+    BlogCardSection,
+    RegisterSection,
   },
   data() {
     return {
@@ -47,22 +53,22 @@ export default {
       sampleBlogCards: [
         {
           blogTitle: "Blog Card #1",
-          blogCoverPhoto: "stok-1",
+          blogCoverPhoto: "stock-1",
           blogDate: "Sep 14, 2022",
         },
         {
-          blogTitle: "Blog Card #1",
-          blogCoverPhoto: "stok-1",
+          blogTitle: "Blog Card #2",
+          blogCoverPhoto: "stock-2",
           blogDate: "Sep 14, 2022",
         },
         {
-          blogTitle: "Blog Card #1",
-          blogCoverPhoto: "stok-1",
+          blogTitle: "Blog Card #3",
+          blogCoverPhoto: "stock-3",
           blogDate: "Sep 14, 2022",
         },
         {
-          blogTitle: "Blog Card #1",
-          blogCoverPhoto: "stok-1",
+          blogTitle: "Blog Card #4",
+          blogCoverPhoto: "stock-4",
           blogDate: "Sep 14, 2022",
         },
       ],

@@ -57,4 +57,55 @@ export default {
 .link-light {
   color: #fff;
 }
+.button,
+.router-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #303030;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(48, 48, 48, 0.8);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.button-ghost {
+  color: #000;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  i {
+    margin-left: 8px;
+  }
+}
+.button-light {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.button-inactive {
+  pointer-events: none;
+  cursor: none;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+@media (min-width: 768px) {
+  .button-ghost {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 </style>

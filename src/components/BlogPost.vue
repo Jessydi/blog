@@ -1,6 +1,6 @@
 <template>
   <article
-    :class="{ 'welcome-screen': post.welcomeScreen, even: blogIsEven }"
+    :class="{ 'welcome-screen': post.welcomeScreen }"
     class="blog-item"
   >
     <div class="blog-item__content">
@@ -55,9 +55,6 @@ export default {
     return {};
   },
   computed: {
-    blogIsEven() {
-      return this.index % 2 === 0;
-    },
     imgSrc() {
       return require(`@/assets/blogPhotos/${this.post.photo}.jpg`);
     },
